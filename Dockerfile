@@ -1,9 +1,9 @@
 #step 1
 FROM node:alpine
 WORKDIR /app
-COPY package.json .
+COPY package.json ./
 RUN npm install
-COPY . .
+COPY ./ ./
 RUN npm run build
 
 # the path to the build folder is /app/build
