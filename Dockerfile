@@ -10,4 +10,5 @@ RUN npm run build
 
 #the FROM statement mark the end and start of a block
 FROM nginx
+EXPOSE 80
 COPY --from=0 /app/build /usr/share/nginx/html
